@@ -1,0 +1,88 @@
+.box-modal{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.459);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-body{
+    display: flex;
+    background-color: #161515;
+    height: 100%;
+}
+
+.box-modal.active{
+    display: flex;
+}
+
+.modal{
+    width: 850px;
+    height: 400px;
+    box-sizing: border-box;
+    overflow: auto;
+    border-radius: 10px;
+    position: relative;
+    padding: 1rem;
+    word-break: break-all;
+    background-color: #161515;
+}
+#modal-closed{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    transition: transform .15s linear ;
+    z-index: 2;
+    background-color: #ffffff00;
+}
+#modal-closed:hover{
+    transform: scale(1.2);
+}
+
+.info{
+    background-color: #161515;
+    padding: 10px 10px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.info div{
+    background-color: #ffffff00;
+    color: white;
+    font-size: 18px;
+}
+.info-title{
+    background-color: #161515;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.avatar{
+    text-align: center;
+    background-color: #fff;
+}
+.location, .origin, select, option{
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #16151581;
+    color: white;
+}
+.location-info, .episode-info{
+    align-items: center;
+    width: 100%;
+}
+.location-info h3, 
+.episode-info h3{
+    background-color: #ffffff00;
+    color: white;
+    font-size: 35px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap');
+
+.banner{
+    padding: 16px;
+}
+
+.freeze {
+  position: static;
+  overflow: hidden;
+}
+
+footer a:hover{
+  padding-left: 6px;
+}
+
+.tabpanel a:hover{
+    transform: scale(1.03);
+}
+
+@media all and (max-width: 400px){
+  html{
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,16 @@
+.card{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 250px;
+    min-height: 120px;
+    border-radius: 4px;
+    background-color: #FAFAFA;
+    text-transform: capitalize;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
+}
+.card img{
+    width: 100%;
+}

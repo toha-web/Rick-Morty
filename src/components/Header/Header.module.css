@@ -1,0 +1,45 @@
+.logo{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.header-menu{
+    width: 85%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    transition: all 0.3s linear;
+}
+
+header a:hover, footer a:hover{
+    transform: scale(1.1);
+}
+
+a.active{
+    box-sizing: border-box;
+    border-bottom: 2px solid;
+}
+
+@media all and (min-width: 500px){
+  .header-menu{
+    gap: 1rem;
+  }
+}
