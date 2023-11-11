@@ -50,7 +50,7 @@ export function ModalLocationLayout({ info, style }) {
                         residents.map((res) => (
                             <option
                                 key={res.id}
-                                onClick={() => window.location.replace(`/characters/${res.id}`)}
+                                onClick={() => window.location.replace(`characters/${res.id}`)}
                             >
                                 {res.name}
                             </option>

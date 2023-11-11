@@ -30,7 +30,7 @@ export function ModalCharacterLayout({ info, style }) {
                     <span className={style["info-title"]}>Origin: </span>
                     <button
                         className={style.origin}
-                        onClick={() => info.origin.url && window.location.replace(`/locations/${info.origin.url.split("/").at(-1)}`)}
+                        onClick={() => info.origin.url && window.location.replace(`locations/${info.origin.url.split("/").at(-1)}`)}
                     >
                         {info.origin.name}
                     </button>
@@ -39,7 +39,7 @@ export function ModalCharacterLayout({ info, style }) {
                     <span className={style["info-title"]}>Location: </span>
                     <button
                         className={style.location}
-                        onClick={() => info.location.url && window.location.replace(`/locations/${info.location.url.split("/").at(-1)}`)}
+                        onClick={() => info.location.url && window.location.replace(`locations/${info.location.url.split("/").at(-1)}`)}
                     >
                         {info.location.name}
                     </button>
@@ -50,7 +50,7 @@ export function ModalCharacterLayout({ info, style }) {
                         {info.episode.map((el, i) => (
                             <option
                                 key={i}
-                                onClick={() => window.location.replace(`/episodes/${el.split("/").at(-1)}`)}
+                                onClick={() => window.location.replace(`episodes/${el.split("/").at(-1)}`)}
                             >{`Episode: ${el.split("/").at(-1)}`}</option>
                         ))}
                     </select>
