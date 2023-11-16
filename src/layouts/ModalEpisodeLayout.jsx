@@ -44,7 +44,7 @@ export function ModalEpisodeLayout({ info, style }) {
                         characters.map((character) => (
                             <option
                                 key={character.id}
-                                onClick={() => window.location.replace(`characters/${character.id}`)}
+                                onClick={() => window.location.replace(`/characters/${character.id}`)}
                             >
                                 {character.name}
                             </option>

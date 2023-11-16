@@ -93,7 +93,7 @@ export function SingleEpisodeLayout({info}){
                             sx={{ borderRadius: "20px", m: "3px" }}
                             onClick={() => {
                                 loadCharacterInfo(
-                                    `character/${character.split("/").at(-1)}`
+                                    `/character/${character.split("/").at(-1)}`
                                 );
                             }}
                             key={character.split("/").at(-1)}

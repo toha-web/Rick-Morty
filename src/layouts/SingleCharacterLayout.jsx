@@ -106,7 +106,7 @@ export function SingleCharacterLayout({info}){
                         {info.origin.url ? (
                             <Link
                                 style={{ color: "#1976d2" }}
-                                to={`locations/${info.origin.url
+                                to={`/locations/${info.origin.url
                                     .split("/")
                                     .at(-1)}`}
                             >
@@ -124,7 +124,7 @@ export function SingleCharacterLayout({info}){
                         {info.location.name ? (
                             <Link
                                 style={{ color: "#1976d2" }}
-                                to={`locations/${info.location.url.split("/").at(-1)}`}
+                                to={`/locations/${info.location.url.split("/").at(-1)}`}
                             >
                                 {info.location.name}
                             </Link>
@@ -152,7 +152,7 @@ export function SingleCharacterLayout({info}){
                             sx={{ borderRadius: "20px", m: "3px" }}
                             onClick={() => {
                                 loadEpisodeInfo(
-                                    `episode/${episode.split("/").at(-1)}`
+                                    `/episode/${episode.split("/").at(-1)}`
                                 );
                             }}
                             key={episode.split("/").at(-1)}

@@ -35,7 +35,7 @@ function Footer(){
                     }}
                 >
                     <CopyrightIcon />
-                    {new Date().getFullYear() != 2023
+                    {new Date().getFullYear() !== 2023
                         ? ` 2023 - ${new Date().getFullYear()}`
                         : `2023`}
                 </Box>

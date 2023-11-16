@@ -102,7 +102,7 @@ export function SingleLocationLayout({info}){
                                 sx={{ borderRadius: "20px", m: "3px" }}
                                 onClick={() => {
                                     loadResidentInfo(
-                                        `character/${resident
+                                        `/character/${resident
                                             .split("/")
                                             .at(-1)}`
                                     );
