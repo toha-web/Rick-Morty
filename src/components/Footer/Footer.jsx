@@ -17,7 +17,7 @@ function Footer(){
             <Toolbar
                 sx={{
                     justifyContent: "space-between",
-                    height: 70,
+                    // height: 70,
                     fontFamily: "Karla, sans-serif",
                     width: { xs: "100%", md: "75%", xl: "50%" },
                     alignItems: "center",

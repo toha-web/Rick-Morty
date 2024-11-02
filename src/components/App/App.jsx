@@ -17,7 +17,7 @@ const theme = createTheme({
         MuiContainer: {
             styleOverrides: {
                 root: {
-                    minHeight: "calc(100vh - 210px)",
+                    minHeight: "calc(100vh - 205px)",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",

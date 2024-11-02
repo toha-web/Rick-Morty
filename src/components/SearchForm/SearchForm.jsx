@@ -35,7 +35,7 @@ function SearchForm() {
 
     return (
         <form onSubmit={(e) => {handleForm(e)}} autoComplete="off">
-            <FormControl sx={{ width: 500, gap: "1rem" }}>
+            <FormControl sx={{ width: {xs: "auto", sm: 500}, gap: "1rem" }}>
                 <RadioGroup
                     name="searchCategory"
                     row

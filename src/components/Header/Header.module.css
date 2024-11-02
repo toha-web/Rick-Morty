@@ -13,13 +13,11 @@
 }
 
 .header-menu{
-    width: 85%;
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
-    justify-content: flex-end;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 a{
@@ -36,10 +34,4 @@ header a:hover, footer a:hover{
 a.active{
     box-sizing: border-box;
     border-bottom: 2px solid;
-}
-
-@media all and (min-width: 500px){
-  .header-menu{
-    gap: 1rem;
-  }
 }

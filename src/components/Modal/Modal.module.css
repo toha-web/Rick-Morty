@@ -21,14 +21,13 @@
 }
 
 .modal{
-    width: 850px;
-    height: 400px;
+    max-width: 850px;
+    max-height: 400px;
     box-sizing: border-box;
     overflow: auto;
     border-radius: 10px;
     position: relative;
     padding: 1rem;
-    word-break: break-all;
     background-color: #161515;
 }
 #modal-closed{
@@ -50,6 +49,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-sizing: border-box;
+    row-gap: 10px;
 }
 .info div{
     background-color: #ffffff00;
@@ -63,8 +64,15 @@
     font-weight: 600;
 }
 .avatar{
+    width: 50%;
     text-align: center;
     background-color: #fff;
+    max-width: 300px;
+    align-self: center;
+}
+.avatar img{
+    width: 100%;
+    object-fit: contain;
 }
 .location, .origin, select, option{
     box-sizing: border-box;
@@ -77,6 +85,7 @@
 }
 .location-info, .episode-info{
     align-items: center;
+    text-align: center;
     width: 100%;
 }
 .location-info h3, 
@@ -85,4 +94,16 @@
     color: white;
     font-size: 35px;
     margin-bottom: 10px;
+}
+
+@media all and (max-width: 600px) {
+    .modal-body{
+        flex-direction: column;
+    }
+    .avatar{
+        width: 60%;
+    }
+    .info{
+        width: 100%;
+    }
 }
